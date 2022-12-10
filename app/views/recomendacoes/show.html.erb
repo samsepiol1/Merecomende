@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @recomendacao %>
+
+<div>
+  <%= link_to "Edit this recomendacao", edit_recomendacao_path(@recomendacao) %> |
+  <%= link_to "Back to recomendacoes", recomendacoes_path %>
+
+  <%= button_to "Destroy this recomendacao", @recomendacao, method: :delete %>
+</div>

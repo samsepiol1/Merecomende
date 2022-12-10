@@ -1,0 +1,138 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+
+	
+
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&ampdisplay=swap" rel="stylesheet">
+
+
+<style>
+        body{
+            background-color:black;
+        }
+        .album{
+            width: 220px !important;
+            position: relative !important;
+            margin:0 auto !important;
+            line-height: 1.4em !important;
+            display: inline-block !important;
+        }
+        #name_album{
+            font-size: 10px;
+            color:white;
+            word-wrap: normal;
+
+        }
+        .checked {
+            color: orange;  
+        }
+        .icons2{
+          width: 220px;
+            position: relative;
+            margin:0 auto;
+            line-height: 1.4em;
+            display: inline-block;
+
+        }
+        .image {
+            width: 200px !important;
+            position: relative !important;
+            margin:0 auto !important;
+            line-height: 1.4em !important;
+            display: inline-block !important;
+}
+
+.image__img {
+    display: block;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background:black ;
+}
+
+.image__overlay2--primary {
+    background: red;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 14px;
+    margin-top: 0.25em;
+}
+</style>
+
+
+<center><h1>Mural</h1></center>
+
+
+  <% @recomendacoes.each do |recomendacao| %>
+    <div class="album">
+    <p class="teste"> <%= link_to "", recomendacao%> <%= image_tag recomendacao.img, size: "200x200"%> </p>
+    <span id = "name_album"><%=recomendacao.titulo%></span>
+    <p style="color:white;">Recomendado por <a class="reference" href="">@<%=recomendacao.artista %></a></p>
+    <br>
+    <br>
+    <br>
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title"> @<%=recomendacao.artista%></div>
+      <p class="image__description">
+          <%=recomendacao.desc%>
+      </p>
+      <%=link_to "Editar", recomendacao%>
+  </div>
+  </div>
+  <% end %>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<button class="btn btn-success">
+<%= link_to "Nova Recomendação", new_recomendacao_path, style:"color:white" %>
+</button>

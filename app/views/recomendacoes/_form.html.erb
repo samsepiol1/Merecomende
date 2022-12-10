@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="style2.css">
+<center><h2>A sua recomendação é importante para manter a plataforma :D</h2></center>
+<%= form_with(model: recomendacao, local:true) do |form| %>
+  <% if recomendacao.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(recomendacao.errors.count, "error") %> prohibited this recomendacao from being saved:</h2>
+
+      <ul>
+        <% recomendacao.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+         <form id='survey-form'>
+        <div class="container">
+       <form id='survey-form'>
+           <div class='form-input'>
+               <label id='name-label'>Username</label>
+               <%= form.text_field :artista, class:'form-input-size', placeholder: "Exemplo: 1uc4s_m4theus" %>
+           </div>
+           <div class='form-input'>
+               <label id='email-label'>Álbum</label>
+               <%= form.text_field :titulo, class:'form-input-size', placeholder: "Exemplo: Metalica - Master of Puppets" %>
+           </div>
+
+           <div class='form-input'>
+               <label id='email-label'>Capa</label>
+               <%= form.text_field :img, class:'form-input-size', placeholder: "www.google.com" %>
+           </div>
+
+
+           <div class='form-input'>
+               <p>O que você pensa sobre esse álbum?  </p>
+               <%= form.text_area :desc, class:'form-input-size', placeholder: "Deixe seu comentário sobre a recomendação" %>
+           </div>
+
+           <div class='form-input'>
+               <button type='submit' id='submit' form.submit >Enviar</button>
+                <%= %>
+           </div>
+
+           
+           
+
+           <button id='submit'>
+                  <%= link_to "Ver Mural", recomendacoes_path, style: "color:white" %>
+                </button>
+            </div>
+       </form>
+   </div>
+   <% end %>
