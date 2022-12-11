@@ -98,4 +98,13 @@
       border-radius: 0.2rem;
       cursor: pointer;
       border: none;
-     }   
+     }
+     #come_back_button{
+      width: 100%;
+      padding: 0.8rem;
+      background: rgb(7, 173, 7);
+      color: white;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      border: none;
+     }    
