@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style2.css">
+    
+   <title>Recomende</title>
+</head>
+<body>
+   <div class="container">
+       <header>
+           <h1 id='title'>Recomende um álbum</h1>
+           <p id='description'>
+               Somos gratos por sua recomendação, pois é ela que mantém a plataforma ^^
+           </p>
+       </header>
+
+       <form id='survey-form'>
+           <div class='form-input'>
+               <label id='name-label'>Username</label>
+               <input type='text' id='name' placeholder='Seu Username' name= 'username' class='form-input-size' required />
+           </div>
+           <div class='form-input'>
+               <label id='email-label'>Álbum</label>
+               <input type='email' id='email' placeholder='Coloque o nome da banda e álbum' name='album'class='form-input-size' required />
+           </div>
+
+
+           <div class='form-input'>
+               <p>O que você pensa sobre esse álbum ?  </p>
+               <textarea type='text' name= "resenha" placeholder='Deixe um comentário sobre a sua recomendação'></textarea>
+           </div>
+
+           <div class='form-input'>
+               <button type='submit' id='submit'>Submit</button>
+           </div>
+       </form>
+   </div>
+
+</body>
+</html>

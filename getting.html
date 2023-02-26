@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+	
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&ampdisplay=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:black;
+        }
+        .album{
+            width: 220px;
+            position: relative;
+            margin:0 auto;
+            line-height: 1.4em;
+            display: inline-block;
+        }
+        #name_album{
+            font-size: 10px;
+            color:white;
+            word-wrap: normal;
+
+        }
+        .checked {
+            color: orange;  
+        }
+        .icons2{
+          width: 220px;
+            position: relative;
+            margin:0 auto;
+            line-height: 1.4em;
+            display: inline-block;
+
+        }
+        .image {
+            width: 200px;
+            position: relative;
+            margin:0 auto;
+            line-height: 1.4em;
+            display: inline-block;
+}
+
+.image__img {
+    display: block;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background:black ;
+}
+
+.image__overlay2--primary {
+    background: red;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 14px;
+    margin-top: 0.25em;
+}
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://www.instagram.com/merecomendee/">MeRecomende</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Música <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item active">
+        <a class="nav-link" href="form_me.html">Recomende<span class="sr-only">Descubra Música</span></a>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="charts.php">Charts<span class="sr-only">Descubra Música</span></a>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="about_s.html">Sobre<span class="sr-only">Descubra Música</span></a>
+      </li>
+        <li>
+        <a class="nav-link" href="jp_mus.html"><img src="japan2.png">  <span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+          <a class="nav-link" href="index.html"> <img src="brazil.png"><span class="sr-only">(current)</span></a>
+          </li>
+           <li>
+            <a class="nav-link" href="american.html"><img src="eua.png">  <span class="sr-only">Versão Americana</span></a>
+            </li>
+      </ul>
+    </div>
+  </nav>
+<br>
+<br>
+
+<div class="album">
+    <p class="teste"><a href=""><img src="https://cdn.mercidisco.com.br/image/cache/data/cd-rihanna-anti-premium-200x200.png"></a></p>
+    <span id = "name_album"> ANTI - 2016</span>
+    <p style="color:white;">Recomendado por <a class="reference" href="">@pedro</a></p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/4Q3ad90GtI0dxyE5ZishAS?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/br/album/anti-deluxe/1440933869"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_lnMdsGA9i4rd3GAgarcRAVTW1h4e82BjI&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/br/album/12279688"><img src="deezer_f.png"></a>
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@pedro</div>
+      <p class="image__description">
+          "Melhor álbum da Rihanna mesmo que os fãs de "unapologetic" e "loud" pensem o contrário. Inciando com uma música super envolvente, consideration, e terminando com a viciante e sensual "sex with me" (na versão deluxe)."
+  
+          
+      </p>
+  </div>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-000607712482-xj4u68-t200x200.jpg"></a></p>
+  <span id = "name_album"> Saijiki - 2019</span>
+  <p style="color:white;">Recomendado por <a class="reference" href="">@lucca</a> </p>
+  <center>
+    <div class="icons2">
+      <a href="https://open.spotify.com/playlist/5VbsVFOZhVAsHkfAozkgU2?IQ_="><img src="spotify.png"></a>
+      <a href="https://music.apple.com/jp/artist/3776/1182612190"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=Bv-V9tD8gdc"><img src="youtube.png"></a>
+
+      </div>
+    </center>
+  <br>
+  <br>
+  <br>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfd7fZHoWj-Jz7oy9DAMYi8SOjtiVGcRdud3lBPX4WRwzTiDIHzKDk1xYLhEyRLYlo7co&usqp=CAU" class="image__img2"></a></p>
+  <span id = "name_album"> Deathcrush - 1987</span>
+  <p style="color:white; font-size: 16px;">Recomendado por <a class="reference" href="">@xxu56</a> </p>
+  <center>
+    <div class="icons2">
+      <a href="https://open.spotify.com/album/2RxBdrvHKwgx57RKrNQ9hz?autoplay=true"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/deathcrush-ep/1451405043"><img src="itunes2.png"></a>
+      <a href="https://music.youtube.com/playlist?list=OLAK5uy_ko_ZC0LQL9k7cXUHjk25f_R8WOGFXzGLY&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/86280362?autoplay=true"><img src="deezer_f.png"></a>
+
+      </div>
+    </center>
+  <br>
+  <br>
+  <br>
+
+  <div class="image__overlay image__overlay--primary">
+    <div class="image__title">@xxu56</div>
+    <p class="image__description">
+        "Sinto como se meu amigo comesse partes da minha cabeça"
+
+        
+    </p>
+</div>
+</div>
+
+<div class="album">
+    <p class="teste"><img class="image__img" src="https://i1.sndcdn.com/artworks-000327622929-d2ia7n-t200x200.jpg" alt="Bricks"></p>
+    <span id = "name_album"> Sewing Kit - 2018</span>
+<p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@fiorennna
+
+<center>
+<div class="icons2">
+  <a href="https://open.spotify.com/album/78lIjVFQSSRqO47Pvw1b9M?autoplay=true"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/you-will-never-know-why/329455551"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=8_y4IFVxGg0"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/en/album/1011313?autoplay=true"><img src="deezer_f.png"></a>
+
+  </div>
+
+</center>
+<br>
+<br>
+<br>
+    <div class="image__overlay image__overlay--primary">
+        <div class="image__title">@fiorennna</div>
+        <p class="image__description">
+            "Sentindo Coisas"
+
+            
+        </p>
+    </div>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="http://boxalbums.com/uploads/covers/cover-qhfaxNPDB6fIXEkbdFBi.jpg"></a></p>
+  <span id = "name_album"> Famous Last Words - 1982</span>
+  <p style="color:white;">Recomendado por <a class="reference" href="">@hunter
+  </a> </p>
+  <center>
+    <div class="icons2">
+      <a href="https://open.spotify.com/album/58JuUAfKGh6bKphiBtp7Nc?autoplay=true"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/br/album/famous-last-words-remastered/1434897783"><img src="itunes2.png"></a>
+      <a href="https://music.youtube.com/playlist?list=OLAK5uy_kKYhR_-n1dQse7CJp1KYX7GCRjAaHOZts&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/72168592?autoplay=true"><img src="deezer_f.png"></a>
+
+      </div>
+    </center>
+  <br>
+  <br>
+  <br>
+  <div class="image__overlay image__overlay--primary">
+    <div class="image__title">@hunter</div>
+    <p class="image__description">
+        "Famous Last Words é um álbum de rock progressivo lançado em 1982. As letras das músicas são profundas e carregadas de sentimento. Álbum impecável.
+        "
+
+        
+    </p>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-Cck3qJs5cj3V-0-t200x200.jpg"></a></p>
+  <span id = "name_album"> Ocean Rain - 1984</span>
+  <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@dark__entries
+</a> </p>
+  <center>
+    <div class="icons2">
+        <a href="https://open.spotify.com/album/43jEYhOEU6eWL51lk4l3M7?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/br/album/ocean-rain/251006541"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_mrENMbFJRqYEoBuTap8ht9wDGNVkflwDg&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/br/album/341058?autoplay=true"><img src="deezer_f.png"></a>
+
+      </div>
+    </center>
+  <br>
+  <br>
+  <br>
+
+  <div class="image__overlay image__overlay--primary">
+    <div class="image__title">@dark___entries</div>
+    <p class="image__description">
+        "um dos álbuns mais profundos, melancólicos, apaixonantes e também subestimados dos anos 80.
+        cheio de passagens memoráveis."
+
+        
+    </p>
+</div>
+</div>
+
+<div class="album">
+    <p class="teste"><a href=""><img src="data:image/jpeg;base64,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"></a></p>
+    <span id = "name_album"> Long Season - 1996</span>
+    <p style="color:white;">Recomendado por <a class="reference" href="">@gvbr
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/4EX1fAypgQC9wDjGI5QzbZ?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://www.deezer.com/br/album/69856482?autoplay=true"><img src="youtube.png"></a>
+        <a href="https://www.youtube.com/watch?v=S3EKEwMXmXY"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@gvbr</div>
+      <p class="image__description">
+          "Uma das coisas mais maravilhosas que já escutei nos últimos tempos, uma coisa que mostra a coisa mais abençoada nos fishmans que é a sonoridade, amo demais recomendo demais
+          "
+  
+          
+      </p>
+  </div>
+  </div>
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-2lbg04RFCBNV-0-t200x200.jpg"></a></p>
+    <span id = "name_album"> Total Xanarchy - 2018</span>
+    <p style="color:white;">Recomendado por <a class="reference" href="">@Labotx
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/2wmmYoAC48iNSTdU5Iwg6H?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/total-xanarchy/1366308661"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_mMA9d2aHmBBdtyRlrZzDnSkwB8cvlzE8Q&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/br/album/60249012?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@Labotx</div>
+      <p class="image__description">
+          "Maior obra prima desse sec
+          "
+  
+          
+      </p>
+  </div>
+  </div>
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="data:image/jpeg;base64,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"></a></p>
+    <span id = "name_album"> I Wonder If You Noticed - 2016</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@thescourge
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/0h2F4r1cGdYZ2Z2hPF8I9q"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/br/album/i-wonder-if-you-noticed-im-sorry-is-such-lovely-sound/1110778919"><img src="itunes2.png"></a>
+        <a href="https://www.deezer.com/en/album/13179364"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlAS5z295KI_w9UK5_xtmMngyOI9d6ittbiAFs1spcATndh8Q06bM7g3TPS2__PpdkQRU&usqp=CAU"></a></p>
+    <span id = "name_album"> Plux Quba - 1998</span>
+    <p style="color:white;">Recomendado por <a class="reference" href="">@luizkogut
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/5RXy2dzARyTcyXn4Vwomzr?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/plux-quba/1044831318"><img src="itunes2.png"></a>
+        <a href="https://www.youtube.com/watch?v=0mfJYGGCRSs"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/en/album/60606852"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@luizkogut</div>
+      <p class="image__description">
+        "álbum bem acessível de musica eletroacústica feito por um artista português e relançado em uma label do jim o'rourke nos anos 90. disco capta bem a forma de produção da tape music ao mesmo tempo que é acessível e infinitamente lindo.
+        "
+          
+  
+          
+      </p>
+  </div>
+  </div>
+  </div>
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://www.sputnikmusic.com/images/albums/41361.jpg"></a></p>
+    <span id = "name_album"> You Will Never Know Why (Sweet Trip)  - 2009</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@narcincess
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/78lIjVFQSSRqO47Pvw1b9M?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/you-will-never-know-why/329455551"><img src="itunes2.png"></a>
+        <a href="https://www.youtube.com/watch?v=8_y4IFVxGg0"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/en/album/1011313?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@narcincess</div>
+      <p class="image__description">
+       "Eu amo ele, é um dos álbuns que mais me acalmam e me deixam esperançosa. Normalmente eu não gosto de 1/3 de um álbum, mas esse eu simplesmente amo do início ao fim.
+       "
+          
+  
+          
+      </p>
+  </div>
+  </div>
+
+
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-ImUbeBz4zZSl-0-t200x200.png"></a></p>
+    <span id = "name_album"> Post to Wire  - 2009</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@duckstab
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/7IN9iaRwJnrTXNKvbrGZkD?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/post-to-wire/3269164"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/browse/MPREb_8cFEHCO5Wq6"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/en/album/185289172?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@duckstab</div>
+      <p class="image__description">
+       "Uma das obras mais impressionantes do trip hop, Post to Wire se destaca por transformar a sensualidade críptica padrão ao gênero em belos sonhos eletrônicos.
+       "
+          
+  
+          
+      </p>
+  </div>
+  </div>
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://images.hungama.com/c/1/a34/64c/3848760/3848760_200x200.jpg"></a></p>
+    <span id = "name_album"> Ser Solidário  - 1982</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@Giocondo
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/4BU9W4qEpf2n04qpbEHAab?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/ser-s%C3%B3lid%C3%A1rio/690501597"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_ng5WX9YYcuEzqjR_emmD8pdAUPxVlJzVg&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/album/5983682?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@Giocondo</div>
+      <p class="image__description">
+       "Disco duplo no qual o cantautor português exorciza todos os seus demônios dos anos anteriores, diretamente relacionados com a situação política de seu país, em um disco que mistura Fado, Música Folclórica, Jazz Fusion e a própria veia da "Música de Intervalo"
+          
+  
+          
+      </p>
+  </div>
+  </div>
+
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://www.recordshopx.com/cover/normal/7/71/713187.jpg?cd"></a></p>
+    <span id = "name_album"> For the First Time  - 2021</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@arcloss
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/2PfgptDcfJTFtoZIS3AukX?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/gb/album/for-the-first-time/1533822061"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_mMlGvmb6bLlM4Vy4zJrLD2xly51BHe9nk&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/en/album/182543292?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@arcloss</div>
+      <p class="image__description">
+        " Uma mistura de post rock/jazz rock e muito experimentalismo. As músicas muitas vezes transmitem um sentimento de urgência e imediatismo. Isso se deve muito pelo fato como as letras são transmitidas pelo vocalista, como se ele tivesse à beira de um colapso        "          
+  
+          
+      </p>
+  </div>
+  </div>
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmI0CjFOqn3y906QkwiteOcNXF-Z5lX8AdineoluycH1L2cG1DZQ2Acq3evMn9W_oD2M&usqp=CAU"></a></p>
+    <span id = "name_album"> Portamento  - 2011</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@luizvasco
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/4I7uuSfSkHKJjrr1vpu4mi?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/ca/album/portamento/1443456176"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_meFaLLa2m9T1E_BXMC_hMHosAeFJqfrl8&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/en/album/1230767?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@luizvasco</div>
+      <p class="image__description">
+        "Um álbum indie. Muito bom recomendo.
+        "  
+          
+      </p>
+  </div>
+  </div>
+  
+
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://i1.sndcdn.com/avatars-000110953832-7irinw-t200x200.jpg"></a></p>
+    <span id = "name_album"> Rust in Peace  - 1991</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@pedrobelle
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/0qaLL09EtF1hiUis7PRvaJ?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/rust-in-peace-remastered/1440848736"><img src="itunes2.png"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_kM-tYdluxoeUZx_GhwaXXZdK38qXFarjU&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/album/299180?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="image__overlay image__overlay--primary">
+      <div class="image__title">@pedrobelle</div>
+      <p class="image__description">
+        "Melhor álbum da história do Speed Metal e melhor álbum do Megadeth
+        "
+        
+      
+          
+      </p>
+  </div>
+  </div>
+  </div>
+  
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkT4DvPnLH_xwSoCVmggMlkWM0ICYBlFW4VQ&usqp=CAU"></a></p>
+    <span id = "name_album"> Loveless  - 1991</span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/3GH4IiI6jQAIvnHVdb5FB6?autoplay=true"><img src="spotify.png"></a>
+       <a href="https://music.apple.com/us/album/loveless/288277647"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=49cwYNVIu5E&list=PL9nvC8yVMurQFunLZR28S8a-PmoTyQ-YH"> <img src="youtube.png"></a>
+        <a href="https://www.deezer.com/br/album/1347692?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+  
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://im.promobit.com.br/363256224016026775883537047234.jpg"></a></p>
+    <span id = "name_album"> Random Access Memories - 2012 </span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa?autoplay=true"><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/random-access-memories/617154241"><img src="itunes2.png"></a>
+        <a href="https://www.youtube.com/watch?v=55Mvx6NWAu0"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/br/album/6575789?autoplay=true"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+   <div class="album">
+    <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-FXeF9tHaGAx3-0-t200x200.jpg"></a></p>
+    <span id = "name_album"> Depression Cherry - 2015 </span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/194CqC2Zi0kUFEPWedb3qr"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/depression-cherry/997913392"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=Cy5MiOqarYs"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/43108841"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+  
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://www.prefirovinil.com.br/uploads/item_images/smithsthequeeni_1386222182.jpeg"></a></p>
+    <span id = "name_album"> The Queen Is Dead - 1986 </span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+       <a href="https://open.spotify.com/album/5Y0p2XCgRRIjna91aQE8q7"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/the-queen-is-dead/800092985"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/playlist?list=PLFIhsqj9dojqqCQAknDFvbi13W4EtLHSp"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/1261474"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+  <div class="album">
+    <p class="teste"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YgYQeq56WQOOsPzmOYhECVFy9hLf6tuLLNbF9QjpYXFKJPriNGkO7N_b-jS03pO0sww&usqp=CAU"></a></p>
+    <span id = "name_album"> Slowdive - 2017 </span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+         <a href="https://open.spotify.com/album/4nSWX5A4xVomzrOEGDKLQ6"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/slowdive/1210172617"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=u23v25GiB4s&feature=youtu.be"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/1261474"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+  
+   <div class="album">
+    <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-000596866214-txmjth-t200x200.jpg"></a></p>
+    <span id = "name_album"> Oncle Jazz - 2019 </span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/4W4gNYa4tt3t8V6FmONWEK"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/oncle-jazz/1473993015"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=iVg30U6O764"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/104755862"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+  <div class="album">
+    <p class="teste"><a href=""><img src="getz.jpg"></a></p>
+    <span id = "name_album"> Getz/Gilberto - 1963 </span>
+    <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+
+    </a> </p>
+    <center>
+      <div class="icons2">
+        <a href="https://open.spotify.com/album/3JvFflPIx7bB6lJ4qId2Er"></a><img src="spotify.png"></a>
+        <a href="https://music.apple.com/us/album/getz-gilberto/1422655717"></a><img src="itunes2.png"></a>
+        <a href="https://www.youtube.com/watch?v=_wXefXHkk3M"><img src="youtube.png"></a>
+        <a href="https://www.deezer.com/br/album/70498172"><img src="deezer_f.png"></a>
+  
+        </div>
+      </center>
+    <br>
+    <br>
+    <br>
+  </div>
+  
+  <div class="album">
+    <p class="teste"><a href=""><img src="data:image/jpeg;base64,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"></a></p>
+  <span id = "name_album"> Mellon Collie and the Infinite Sadness - 1995</span>
+   <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+  <center>
+    <div class="icons2">
+      <a href="https://open.spotify.com/album/09LdvC3k8ybEmyeiShUWw2"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/mellon-collie-and-the-infinite-sadness-remastered/721224313"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=Hv6BCiv_kDg"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/6163131"><img src="deezer_f.png"></a>
+
+      </div>
+    </center>
+  <br>
+  <br>
+  <br>
+</div>
+
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-2Ooc1UAmmcXQ-0-t200x200.jpg"></a></p>
+  <span id = "name_album"> Tales of Mystery and Imagination  - 1976</span>
+  <p style="color:white; font-size: 12px;">Recomendado por <a class="reference" href="">@pequenosoldadin
+
+  </a> </p>
+  <center>
+    <div class="icons2">
+      <a href="https://open.spotify.com/album/1Z4oBiD0q8rTwWIYrDwsys?autoplay=true"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/br/album/tales-of-mystery-and-imagination/1045542969"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=y7htAlPqwBI"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/72170232?autoplay=true"><img src="deezer_f.png"></a>
+
+      </div>
+    </center>
+  <br>
+  <br>
+  <br>
+
+  <div class="image__overlay image__overlay--primary">
+    <div class="image__title">@pequenosoldadin</div>
+    <p class="image__description">
+      "Reconfortante
+      "
+      
+    
+        
+    </p>
+</div>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz6Z-umcAY2VtYFrc6mY97O6sKztbqZ9ULLA1f0esYzF_ekV7g8BUvPIjKTVVTnBBXGiw&usqp=CAU"></a></p>
+<span id = "name_album"> Dreams - 1968</span>
+ <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@dordemorrer
+<center>
+  <div class="icons2">
+    <a href="https://www.deezer.com/br/album/51342742?autoplay=true"><img src="spotify.png"></a>
+    <a href="https://music.youtube.com/playlist?list=OLAK5uy_mDV_CDPlPwU-GoFQddzdr1HugpFE1TzVc&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+    <a href="https://www.deezer.com/br/album/51342742?autoplay=true"><img src="deezer_f.png"></a>
+
+    </div>
+  </center>
+<br>
+<br>
+<br>
+
+<div class="image__overlay image__overlay--primary">
+  <div class="image__title">@dordemorrer</div>
+  <p class="image__description">
+    "muito bom
+    "
+    
+  
+      
+  </p>
+</div>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="http://www.metal-temple.com/uploads/catalogues/Sadwings.jpg"></a></p>
+<span id = "name_album"> Lonely Hero - 1985</span>
+ <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@Begotten
+<center>
+  <div class="icons2">
+    <a href="https://open.spotify.com/album/3uIX4HtmZY2f8RoEsjOMXM"><img src="spotify.png"></a>
+    <a href="https://music.apple.com/us/album/the-lonely-hero/1478487157"><img src="itunes2.png"></a>
+    <a href="https://www.youtube.com/watch?v=KcNCjReDxMU"><img src="youtube.png"></a>
+
+    </div>
+  </center>
+<br>
+<br>
+<br>
+
+<div class="image__overlay image__overlay--primary">
+  <div class="image__title">@Begotten</div>
+  <p class="image__description">
+    "Esse álbum me acompanhou em várias fases da minha vida
+    Felizes ou tristes
+    Ele foi a minha válvula de escape pra um mundo de fantasias
+    "
+    
+  
+      
+  </p>
+</div>
+</div>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://i1.sndcdn.com/artworks-0dQFd31Bdx5I-0-t200x200.jpg"></a></p>
+<span id = "name_album"> Boggie Napie - 2016</span>
+ <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@Ancap
+<center>
+  <div class="icons2">
+    <a href="https://open.spotify.com/album/6HsKHQGO3oineHD04cm17X?autoplay=true"><img src="spotify.png"></a>
+    <a href="https://music.youtube.com/playlist?list=OLAK5uy_ne0zNqJVC829A-VIAwtzmdBInBCEYlxU4&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube.png"></a>
+    <a href="https://www.deezer.com/br/album/14707022?autoplay=true"><img src="deezer_f.png"></a>
+
+    </div>
+  </center>
+<br>
+<br>
+<br>
+
+<div class="image__overlay image__overlay--primary">
+  <div class="image__title">@Ancap</div>
+  <p class="image__description">
+    " um ótimo álbum para curtir tanto ritmos animados quanto lentos ao melhor ritmo nostálgico dos anos de ouro do boogie e do disco. As letras aparentemente sem muito sentido nas primeiras impressões na verdade dizem muito mais do que nossos ouvidos podem e
+    "
+    
+  
+      
+  </p>
+</div>
+</div>
+
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://img.discogs.com/Bjivq4rkLz0Yuv8yNh-xjiRwIIE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5836469-1404055292-4894.jpeg.jpg"></a></p>
+<span id = "name_album"> A Wizard, a True Star - 1973</span>
+ <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@Guilherme
+<center>
+  <div class="icons2">
+    <a href="https://open.spotify.com/album/3vpVWxOR2W611w9lgAxWET?autoplay=true"><img src="spotify.png"></a>
+    <a href="https://music.apple.com/ca/album/a-wizard-a-true-star/1084056467"><img src="itunes2.png"></a>
+    <a href="https://music.youtube.com/browse/MPREb_EHdNBMRwPJ6"><img src="youtube.png"></a>
+    <a href="https://www.deezer.com/br/album/180610172?autoplay=true"><img src="deezer_f.png"></a>
+
+    </div>
+  </center>
+<br>
+<br>
+<br>
+
+<div class="image__overlay image__overlay--primary">
+  <div class="image__title">@Guilherme</div>
+  <p class="image__description">
+    "As músicas do lado A são uma viagem total, uma se mescla na outra, dando um efeito muito bom, como se fosse um Medley. Já o lado B é mais pé no chão, com músicas mais parecidas com que o Todd Rundgren fazia anteriormente.
+    "
+    
+  
+      
+  </p>
+</div>
+</div>
+
+<div class="album">
+  <p class="teste"><a href=""><img src="https://pics.prcm.jp/6f90c88ab37e4/71991153/jpeg/71991153_200x200.jpeg"></a></p>
+<span id = "name_album"> Namida - 2017</span>
+ <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@marikatani
+<center>
+  <div class="icons2">
+    <a href="https://open.spotify.com/album/09LdvC3k8ybEmyeiShUWw2"><img src="spotify.png"></a>
+    <a href="https://music.apple.com/us/album/mellon-collie-and-the-infinite-sadness-remastered/721224313"><img src="itunes2.png"></a>
+    <a href="https://www.youtube.com/watch?v=Hv6BCiv_kDg"><img src="youtube.png"></a>
+    <a href="https://www.deezer.com/br/album/6163131"><img src="deezer_f.png"></a>
+
+    </div>
+  </center>
+<br>
+<br>
+<br>
+</div>
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--
+  <div class="image">
+        <img class="image__img" src="https://i1.sndcdn.com/artworks-000327622929-d2ia7n-t200x200.jpg" alt="Bricks">
+        <span id = "name_album"> Mellon Collie and the Infinite Sadness - 1995</span>
+   <p style="color:white; font-size: 14px;">Recomendado por <a class="reference" href="">@adm
+  <center>
+    <div class="icons2">
+      <a href="https://open.spotify.com/album/09LdvC3k8ybEmyeiShUWw2"><img src="spotify.png"></a>
+      <a href="https://music.apple.com/us/album/mellon-collie-and-the-infinite-sadness-remastered/721224313"><img src="itunes2.png"></a>
+      <a href="https://www.youtube.com/watch?v=Hv6BCiv_kDg"><img src="youtube.png"></a>
+      <a href="https://www.deezer.com/br/album/6163131"><img src="deezer_f.png"></a>
+
+      </div>
+    </center>
+        <div class="image__overlay image__overlay--primary">
+            <div class="image__title">@fiorennna</div>
+            <p class="image__description">
+                "Sentindo Coisa"
+
+                
+            </p>
+        </div>
+    </div>
+
+-->
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,242 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Somos uma Plataforma Web com o intuito de compartilhar Músicas, Livros, Filmes e divulgar artistas independentes de forma livre e gratutita">
+    <meta name="robots" content="index, follow">
+    
+    <title>me recomende música| Merecomende</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+	
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&ampdisplay=swap" rel="stylesheet">
+    
+    <style>
+           body{
+            background-color: #191726;
+        }
+        .icons2{
+            width: 220px;
+            position: relative;
+            margin:0 auto;
+            line-height: 1.4em;
+            display: inline-block;
+        }
+        #name_album{
+            font-size: 14px;
+            color:white;
+            word-wrap: normal;
+
+        }
+        .checked {
+            color: orange;  
+        }
+        .track{
+          color:white;
+          text-align:center;
+        }
+
+        .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  font-family:'Roboto','sans-serif'
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.reference{
+    color:white;
+}
+
+</style>
+	
+    
+
+  
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://www.instagram.com/merecomendee/">Me Recomende</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Música <span class="sr-only">Descubra Música</span></a>
+      </li>
+      
+       <li class="nav-item active">
+        <a class="nav-link" href="form_me.html">Recomende<span class="sr-only">Descubra Música</span></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="users.html">Recomendações<span class="sr-only">Descubra Música</span></a>
+      </li>
+      
+       <li class="nav-item active">
+        <a class="nav-link" href="charts.php">Charts<span class="sr-only">Descubra Música</span></a>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="about_s.html">Sobre<span class="sr-only">Descubra Música</span></a>
+      </li>
+        
+      <li>
+      <a class="nav-link" href="jp_mus.html"><img src="japan2.png" alt="bandeira do japão selecionar idioma me recomende">  <span class="sr-only">Versão Japonesa</span></a>
+      </li>
+
+      <li>
+        <a class="nav-link" href="index.html"><img src="brazil.png" alt="bandeira do brasil selecionar idioma me recomende">  <span class="sr-only">Versão Brasileira</span></a>
+        </li>
+        
+        <li>
+            <a class="nav-link" href="american.html"><img src="eua.png" alt="bandeira dos estados unidos selecionar idioma me recomende">  <span class="sr-only">Versão Americana</span></a>
+            </li>
+
+        
+    </ul>
+  </div>
+</nav>
+
+<br>
+<br>
+
+
+<h1 style="color:white;">Álbum da Semana</h1>
+
+<center> <h5 style="color:white;">Recomendado por <a class="reference" href="">@dordemorrer</a> </h5></center>
+
+<br>
+
+
+<div class="imagem">
+  
+    <p><img src="https://img.discogs.com/b_O--ShOuLzDZHOCrijGj_QczBE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16030720-1604362535-9390.jpeg.jpg" class="lightbox-cats" id="myBtn2" alt="menina japonesa de cabelos pretos e com a bandeira do japão de fundo"></p>
+
+
+</div>
+<br>
+<br>
+<p style="color:white; text-align:center;"> 
+  Gábor Szabó - Dreams </p>
+<br>
+<center><h4 style="color:white;">TrackList</h4></center>
+<div>
+<a href="https://www.youtube.com/watch?v=TZp_nGMj6GE"><p class="track"> 1 -
+  Galatea's Guitar </p></a>
+    
+      
+
+<a href="https://www.youtube.com/watch?v=IzYsnq9-JvQ" id="click-me"><p class="track"> 2 - Half the Day Is the Night</p></a>
+
+<a href="https://www.youtube.com/watch?v=7uD3CX0v-B4" id="click-me"><p class="track"> 3 - Song of Injured Love
+</p></a>
+<a href="https://www.youtube.com/watch?v=RL9g3MEPhOE" id="click-me"><p class="track"> 4 - The Fortune Teller
+</p></a>
+<a href="https://www.youtube.com/watch?v=4tqSQb_lAIc" id="click-me"><p class="track"> 5 -
+  Fire Dance
+</p></a>
+<a href="https://www.youtube.com/watch?v=CyyAOtWgzJA" id="click-me"><p class="track"> 6 - The Lady in the Moon
+</p></a>
+<a href="https://www.youtube.com/watch?v=HUiBcBOS2vI" id="click-me"><p class="track"> 7 - Ferris Wheel
+</p></a>
+</div>
+<br>
+<center>
+<div class="icons2">
+  <a href="https://open.spotify.com/album/1dZ1YNQiR7LRMkrQydwy40"><img src="spotify2.png"></a>
+  <a href="https://www.deezer.com/br/album/51342742?autoplay=true"><img src="deezer_h.png"></a>
+  <a href="https://music.youtube.com/playlist?list=OLAK5uy_mDV_CDPlPwU-GoFQddzdr1HugpFE1TzVc&feature=gws_kp_album&feature=gws_kp_artist"><img src="youtube2.png"></a>
+  </div>
+</center>
+<br>
+
+
+    <div align="center" style="background: #191726; padding: 50px;color:white;">
+        <i class="fa fa-star fa-2x" data-index="0"></i>
+        <i class="fa fa-star fa-2x" id="edit" data-index="1"></i>
+        <i class="fa fa-star fa-2x" data-index="2"></i>
+        <i class="fa fa-star fa-2x" data-index="3"></i>
+        <i class="fa fa-star fa-2x" data-index="4"></i>
+        <br><br>
+        <?php echo round($avg,2) ?>
+    </div>
+	
+	<center><a href="users.html"><button type='submit' class='btn btn-primary'>Ver outros Álbuns!</button></a></center>
+	<br>
+	<br>
+	</div>
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82MR53CTMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-82MR53CTMQ');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161471030-2">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161471030-2');
+</script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripting.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</body>
+</html>
