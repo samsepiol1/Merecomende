@@ -7,8 +7,8 @@ if (isset($_POST['submit'])) {
 		$resenha = $_POST['resenha'];
 		$host = "localhost";
 		$dbUsername = "u796975099_root";
-		$dbPassword = "#Imac88246948";
-		$dbName = "u796975099_stars";
+		$dbPassword = "";
+		$dbName = "";
 		$conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
         if ($conn->connect_error) {
             die('Could not connect to the database.');
